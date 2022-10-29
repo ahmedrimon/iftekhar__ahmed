@@ -1,10 +1,15 @@
-import Navbar from "./Navbar.js";
+import navbar from "../components/Navbar/navbar.js";
 
 export default function RootLayout({ children }) {
   return (
     <html>
-      <Navbar />
-      <body>{children}</body>
+      <head>
+        <title>Iftekhar Portfolio</title>
+      </head>
+      <body>
+        <navbar />
+        {children}
+      </body>
     </html>
   )
 }
